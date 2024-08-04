@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: retoc
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: admin
+  flyway:
+    url: jdbc:postgresql://localhost:5433/postgres
+    locations: classpath:db/migration
+
+
